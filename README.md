@@ -1,5 +1,21 @@
+# THIS IS NOT FINISHED YET OK? IT WON'T WORK
 # Rust Website Template
 Rust Website Template is a NodeJS/EJS App built to easily set up a website for a Rust Community.
+
+## Config Options
+- Steam API Key (Optional if you don't want to display Steam member count)
+- Discord invite link (Optional)
+- Discord JSON API link (Optional)
+- Twitter link
+- YouTube link
+- Store link (tebex/gpay/craftingstore)
+- Facebook link
+
+### How to get Discord API Link? (This is not the invite link!)
+1. Go to your Discord Server Settings.
+2. Click "Widget".
+3. Click "Copy" next to JSON API.
+4. Paste it into discordAPILink in config.js.
 
 ## General Info
 * Change images, colors and text with simple config file.
@@ -8,21 +24,15 @@ Rust Website Template is a NodeJS/EJS App built to easily set up a website for a
 * Responsive
 * Built with NodeJS and EJS.
 
-### How to get Discord API Link? (This is not the invite link!)
-1. Go to your Discord Server Settings.
-2. Click "Widget".
-3. Click "Copy" next to JSON API.
-4. Paste it into discordAPILink in config.js.
-
 ## How to install?
 There are many ways to run a Node app, but I'm going to guide you through with Heroku.com. Heroku.com offers a free tier with some down sides, but they also offer affordable 'Hobbyist' hosting. We will be setting up the free tier, but you can upgrade it anytime you want.
 
-### Setting up files locally
+### 1. Setting up files locally
 1. Download the files and put them into a folder somewhere in your computer. Just remember the location.
 2. Open your Terminal (MacOS) or Command Prompt (Windows) and type "cd /path/to/the/folder/"
 3. Once you have managed to get into the folder you can move to Setting up Heroku
 
-### Setting up Heroku
+### 2. Setting up Heroku
 1. Go to https://www.heroku.com
 2. Sign Up.
 	- You can select Node.js in the "Primary development language". It doesn't matter though.
