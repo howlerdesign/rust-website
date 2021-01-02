@@ -15,6 +15,8 @@
 <body>
 	<div class="container">
 
+		<button id="open-nav"><i class="fas fa-bars"></i></button>
+
 		<nav class="nav" role="navigation">
 			<div class="logo">
 				<img src="<%= topLogo %>" alt="Logo">
@@ -22,14 +24,18 @@
 			<ul class="navigation">
 				<% if (useStore && useStats) { %>
 				<li><a href="/">HOME</a></li>
-				<li><a href="/store">STORE</a></li>
+				<li><a href="<%= storeLink %>">STORE</a></li>
 				<li><a href="/stats">STATS</a></li>
 				<% } else if (!useStore && useStats) { %>
 				<li><a href="/">HOME</a></li>
 				<li><a href="/stats">STATS</a></li>
 				<% } else if (useStore && !useStats) { %>
 				<li><a href="/">HOME</a></li>
-				<li><a href="/store">STORE</a></li>
+				<li><a href="<%= storeLink %>">STORE</a></li>
+				<% } else if (!useStore && !useStats) { %>
+				<li><a href="/">HOME</a></li>
 				<% } %>
 			</ul>
+
+			<button id="close-nav"><i class="fas fa-times"></i></button>
 		</nav>

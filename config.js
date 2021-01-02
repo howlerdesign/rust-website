@@ -22,21 +22,22 @@ module.exports = {
 	twitterLink: 'https://twitter.com/yourtwitter',
 	facebookLink: 'https://facebook.com/facebook',
 	youtubeLink: 'https://youtube.com/youtube',
-	discordLink: 'https://yourdiscordinvitelink.com', // Make sure the link never expires
-	discordAPILink: 'https://discord.api.link.com',
+	discordLink: 'https://discord.gg/C6uR8JEWmn', // Make sure the link never expires
+	discordServerID: '780454401466171402',
 	steamGroup: 'https://yousteamgrouplink.com',
 	storeLink: 'https://yourstorelink.com',
 
 	// Images
-	headerBackground: 'https://i.imgur.com/oLFD9Jp.png',
-	topLogoUrl: 'Link to your logo', // Will be displayed at the top of the page.
-	logoUrl: 'https://rusthavoc.com/img/logo.png', // Will be displayed in the community introduction
+	headerBackground: 'https://i.imgur.com/oLFD9Jp.png', // Change the header background image
+	topLogoUrl: 'https://i.imgur.com/Ih9URET.png', // Will be displayed at the top of the page. Suggested size: 100x30px
+	logoUrl: 'https://i.imgur.com/830Y6pL.png', // Will be displayed in the community introduction. Suggested size: 300x300px
 
 	// Database info
-	dbHost: 'localhost',
-	dbDb: 'Name of the database',
-	dbUser: 'DB Username',
-	dbPw: 'DB Password',
+	dbHost: '94.237.112.136', // IP of the server where your database is hosted
+	dbTable: 'playerranksdb', // Only change this if you changed the table name when installing the plugin
+	dbDb: 'rustteam', // Name of the database
+	dbUser: 'rustteam',
+	dbPw: '328yrgHjmn98/',
 
 	// Front page cards
 	// You can create new cards by adding new card object.

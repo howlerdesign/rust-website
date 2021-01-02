@@ -18,6 +18,12 @@
 					<% } else if (useYoutube && useTwitter && !useFacebook) { %>
 					<li><a href="<%= youtubeLink %>">YouTube</a></li>
 					<li><a href="<%= twitterLink %>">Twitter</a></li>
+					<% } else if (useYoutube && !useTwitter && !useFacebook) { %>
+					<li><a href="<%= youtubeLink %>">YouTube</a></li>
+					<% } else if (!useYoutube && !useTwitter && useFacebook) { %>
+					<li><a href="<%= facebookLink %>">Facebook</a></li>
+					<% } else if (!useYoutube && useTwitter && !useFacebook) { %>
+					<li><a href="<%= twitterLink %>">Twitter</a></li>
 					<% } %>
 				</ul>
 			</div>
@@ -53,6 +59,7 @@
 	</div>
 </footer>
 </div>
+<script src="../js/scripts.js"></script>
 </body>
 
 </html>

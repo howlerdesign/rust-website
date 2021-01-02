@@ -1,0 +1,25 @@
+<%- include('partials/head') %>
+<%- include('partials/header') %>
+
+<main>
+	<section class="stats">
+		<ol>
+			<div>
+				<strong class="align-left">Player</strong>
+				<strong>Kills</strong>
+				<strong>Deaths</strong>
+				<strong>KDR</strong>
+			</div>
+			<% stats.forEach(player => { %>
+			<li style="border-bottom: .5px solid <%= color %>">
+				<span class="align-left"><%= player.Name %></span>
+				<span><%= player.PVPKills %></span>
+				<span><%= player.Deaths %></span>
+				<span><%= player.KDR %></span>
+			</li>
+			<% }); %>
+			</ul>
+	</section>
+</main>
+
+<%- include('partials/footer') %>

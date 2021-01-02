@@ -3,7 +3,6 @@
 Rust Website Template is a NodeJS/EJS App built to easily set up a website for a Rust Community.
 
 ## Config Options
-- Steam API Key (Optional if you don't want to display Steam member count)
 - Discord invite link (Optional)
 - Discord JSON API link (Optional)
 - Twitter link
@@ -11,16 +10,17 @@ Rust Website Template is a NodeJS/EJS App built to easily set up a website for a
 - Store link (tebex/gpay/craftingstore)
 - Facebook link
 
-### How to get Discord API Link? (This is not the invite link!)
-1. Go to your Discord Server Settings.
-2. Click "Widget".
-3. Click "Copy" next to JSON API.
-4. Paste it into discordAPILink in config.js.
+### How to get Discord Server ID?
+1. Go to your Discord server.
+2. Right click on the server name.
+3. Click on "Copy ID".
+4. Paste it to "discordServerID" in config.js.
 
 ## General Info
 * Change images, colors and text with simple config file.
 * Display Steam membercount.
 * Display Discord membercount.
+* Player Statistics (Requires PlayerRanks to be installed: https://codefling.com/file/14-playerranks/)
 * Responsive
 * Built with NodeJS and EJS.
 
@@ -48,8 +48,11 @@ There are many ways to run a Node app, but I'm going to guide you through with H
 12. Type "git commit -m "First Commit".
 13. Type "git push heroku master".
 14. Wait for it to upload the app. Once it has finished, it will provide you a link that you can use to open the website. (Looks like www.yourappname.herokuapp.com).
-15. If you configured the config.js file correctly, you should see you website live.
+15. If you configured the config.js file correctly, your should see you website live.
 
 ### Custom Domain
 You might want your website to be accessible with your own domain. Heroku has made this easy.
 Instructions: https://devcenter.heroku.com/articles/custom-domains
+
+## Support
+If you have any questions, join my Discord: https://discord.gg/EMmv74DUaw
