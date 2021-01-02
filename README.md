@@ -1,4 +1,3 @@
-# THIS IS NOT FINISHED YET OK? IT WON'T WORK
 # Rust Website Template
 Rust Website Template is a NodeJS/EJS App built to easily set up a website for a Rust Community.
 
@@ -28,7 +27,7 @@ Rust Website Template is a NodeJS/EJS App built to easily set up a website for a
 There are many ways to run a Node app, but I'm going to guide you through with Heroku.com. Heroku.com offers a free tier with some down sides, but they also offer affordable 'Hobbyist' hosting. We will be setting up the free tier, but you can upgrade it anytime you want.
 
 ### 1. Setting up files locally
-1. Download the files and put them into a folder somewhere in your computer. Just remember the location.
+1. Download the files and put them into a folder somewhere in your computer. Just remember the location. (Code -> Download ZIP)
 2. Open your Terminal (MacOS) or Command Prompt (Windows) and type "cd /path/to/the/folder/"
 3. Once you have managed to get into the folder you can move to Setting up Heroku
 
