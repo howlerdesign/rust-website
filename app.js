@@ -164,7 +164,7 @@ app.get('/stats', (req, res) => {
 		if (config.useDiscord && config.useSteam) {
 			axios.get(`https://discord.com/api/guilds/${config.discordServerID}/widget.json`)
 				.then(discordOnline => {
-					axios.get('https://steamcommunity.com/groups/RaidGroundsOfficial/memberslistxml/?xml=1')
+					axios.get(`https://steamcommunity.com/groups/${config.steamGroup}/memberslistxml/?xml=1`)
 						.then(steamOnline => {
 							parser.parseString(steamOnline.data, (err, steam) => {
 								if (!err) {
@@ -204,7 +204,7 @@ app.get('/stats', (req, res) => {
 
 	} else if (!config.useDiscord && config.useSteam) {
 
-		axios.get('https://steamcommunity.com/groups/RaidGroundsOfficial/memberslistxml/?xml=1')
+		axios.get(`https://steamcommunity.com/groups/${config.steamGroup}/memberslistxml/?xml=1`)
 			.then(steamOnline => {
 				parser.parseString(steamOnline.data, (err, steam) => {
 					if (!err) {
