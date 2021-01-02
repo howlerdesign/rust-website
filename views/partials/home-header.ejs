@@ -9,17 +9,20 @@
 
 		<div class="cta-buttons">
 			<% if (useSteam && useDiscord && useStore) { %>
-			<a href="<%= steamLink %>" class="cta" style="background: <%= color %>" target="_blank">STEAM</a>
+			<a href="https://steamcommunity.com/groups/<%= steamLink %>" class="cta" style="background: <%= color %>"
+				target="_blank">STEAM</a>
 			<a href="<%= discordLink %>" class="cta" style="background:  <%= color %>" target="_blank">DISCORD</a>
 			<a href="<%= storeLink %>" class="cta" style="background:  <%= color %>" target="_blank">STORE</a>
 			<% } else if (!useSteam && useDiscord && useStore) { %>
 			<a href="<%= discordLink %>" class="cta" style="background:  <%= color %>" target="_blank">DISCORD</a>
 			<a href="<%= storeLink %>" class="cta" style="background:  <%= color %>" target="_blank">STORE</a>
 			<% } else if (useSteam && !useDiscord && useStore) { %>
-			<a href="<%= steamLink %>" class="cta" style="background:  <%= color %>" target="_blank">STEAM</a>
+			<a href="https://steamcommunity.com/groups/<%= steamLink %>" class="cta" style="background:  <%= color %>"
+				target="_blank">STEAM</a>
 			<a href="<%= storeLink %>" class="cta" style="background:  <%= color %>" target="_blank">STORE</a>
 			<% } else if (useSteam && useDiscord && !useStore) { %>
-			<a href="<%= steamLink %>" class="cta" style="background:  <%= color %>" target="_blank">STEAM</a>
+			<a href="https://steamcommunity.com/groups/<%= steamLink %>" class="cta" style="background:  <%= color %>"
+				target="_blank">STEAM</a>
 			<a href="<%= discordLink %>" class="cta" style="background:  <%= color %>" target="_blank">DISCORD</a>
 			<% } %>
 		</div>
