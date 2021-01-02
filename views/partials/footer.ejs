@@ -1,0 +1,58 @@
+<footer class="footer">
+	<div class="card-bg" style="background: <%= color %>"></div>
+	<div class="footer-menus">
+		<div class="menu-grid">
+			<div>
+				<h4 style="color: <%= color %>">Social</h4>
+				<ul>
+					<% if (useYoutube && useTwitter && useFacebook) { %>
+					<li><a href="<%= youtubeLink %>">YouTube</a></li>
+					<li><a href="<%= twitterLink %>">Twitter</a></li>
+					<li><a href="<%= facebookLink %>">Facebook</a></li>
+					<% } else if (!useYoutube && useTwitter && useFacebook) { %>
+					<li><a href="<%= twitterLink %>">Twitter</a></li>
+					<li><a href="<%= facebookLink %>">Facebook</a></li>
+					<% } else if (useYoutube && !useTwitter && useFacebook) { %>
+					<li><a href="<%= youtubeLink %>">YouTube</a></li>
+					<li><a href="<%= facebookLink %>">Facebook</a></li>
+					<% } else if (useYoutube && useTwitter && !useFacebook) { %>
+					<li><a href="<%= youtubeLink %>">YouTube</a></li>
+					<li><a href="<%= twitterLink %>">Twitter</a></li>
+					<% } %>
+				</ul>
+			</div>
+			<div>
+				<h4 style="color: <%= color %>"><%= community %></h4>
+				<ul>
+					<% if (useStore && useStats) { %>
+					<li><a href="/">Home</a></li>
+					<li><a href="<%= storeLink %>" target="_blank">Store</a></li>
+					<li><a href="/stats">Stats</a></li>
+					<% } else if (!useStore && useStats) { %>
+					<li><a href="/">Home</a></li>
+					<li><a href="/stats">Stats</a></li>
+					<% } else if (useStore && !useStats) { %>
+					<li><a href="/">Home</a></li>
+					<li><a href="<%= storeLink %>" target="_blank">Store</a></li>
+					<% } %>
+				</ul>
+			</div>
+		</div>
+		<div class="online">
+			<% if (useDiscord && useSteam) { %>
+			<h4>Discord Online: <span><%= discordOnline %></span></h4>
+			<h4>Steam Online: <span><%= steamOnline %></span></h4>
+			<% } else if (!useDiscord && useSteam) { %>
+			<h4>Steam Online: <span><%= steamOnline %></span></h4>
+			<% } else if (useDiscord && !useSteam) { %>
+			<h4>Discord Online: <span><%= discordOnline %></span></h4>
+			<% } else if (!useDiscord && !useSteam) { %>
+			<h4><%= community %></h4>
+			<% } %>
+		</div>
+	</div>
+</footer>
+</div>
+</body>
+
+</html>

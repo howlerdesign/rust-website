@@ -1,0 +1,16 @@
+{
+  "name": "rust-website",
+  "version": "0.0.1",
+  "description": "Website Template for Rust Community",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "Marko Ahola <markoahola@icloud.com>",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1"
+  }
+}

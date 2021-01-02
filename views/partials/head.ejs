@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Catamaran:wght@400;600&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="../fontawesome/css/all.min.css">
+	<link rel="stylesheet" href="../css/main.css">
+	<title><%= community %></title>
+</head>
+
+<body>
+	<div class="container">
+
+		<nav class="nav" role="navigation">
+			<div class="logo">
+				<img src="<%= topLogo %>" alt="Logo">
+			</div>
+			<ul class="navigation">
+				<% if (useStore && useStats) { %>
+				<li><a href="/">HOME</a></li>
+				<li><a href="/store">STORE</a></li>
+				<li><a href="/stats">STATS</a></li>
+				<% } else if (!useStore && useStats) { %>
+				<li><a href="/">HOME</a></li>
+				<li><a href="/stats">STATS</a></li>
+				<% } else if (useStore && !useStats) { %>
+				<li><a href="/">HOME</a></li>
+				<li><a href="/store">STORE</a></li>
+				<% } %>
+			</ul>
+		</nav>
