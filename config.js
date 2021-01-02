@@ -3,7 +3,7 @@ module.exports = {
 
 	// Features
 	// True if you want to display these links, false if not.
-	useStats: false,
+	useStats: true,
 	useStore: true,
 	useSteam: true,
 	useDiscord: true,
@@ -32,11 +32,11 @@ module.exports = {
 	logoUrl: 'https://i.imgur.com/830Y6pL.png', // Will be displayed in the community introduction. Suggested size: 300x300px
 
 	// Database info (If you want to use Stats page. If not, set useStats: false!)
-	dbHost: 'localhost', // IP of the server where your database is hosted
+	dbHost: '94.237.112.136', // IP of the server where your database is hosted
 	dbTable: 'playerranksdb', // Only change this if you changed the table name when installing the plugin
-	dbDb: 'database', // Name of the database
-	dbUser: 'username',
-	dbPw: 'password',
+	dbDb: 'rustteam', // Name of the database
+	dbUser: 'rustteam',
+	dbPw: '328yrgHjmn98/',
 
 	// Front page cards
 	// You can create new cards by adding new card object.
