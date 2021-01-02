@@ -22,16 +22,16 @@ module.exports = {
 	facebookLink: 'https://facebook.com/facebook',
 	youtubeLink: 'https://youtube.com/youtube',
 	discordLink: 'https://discord.gg/C6uR8JEWmn', // Make sure the link never expires
-	discordServerID: '780454401466171402',
-	steamGroup: 'https://yousteamgrouplink.com',
 	storeLink: 'https://yourstorelink.com',
+	discordServerID: '780454401466171402',
+	steamGroup: 'SteamName', // https://steamcommunity/groups/<copy this part>
 
 	// Images
 	headerBackground: 'https://i.imgur.com/oLFD9Jp.png', // Change the header background image
 	topLogoUrl: 'https://i.imgur.com/Ih9URET.png', // Will be displayed at the top of the page. Suggested size: 100x30px
 	logoUrl: 'https://i.imgur.com/830Y6pL.png', // Will be displayed in the community introduction. Suggested size: 300x300px
 
-	// Database info
+	// Database info (If you want to use Stats page. If not, set useStats: false!)
 	dbHost: 'localhost', // IP of the server where your database is hosted
 	dbTable: 'playerranksdb', // Only change this if you changed the table name when installing the plugin
 	dbDb: 'database', // Name of the database
