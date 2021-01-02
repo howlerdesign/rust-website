@@ -3,7 +3,7 @@ module.exports = {
 
 	// Features
 	// True if you want to display these links, false if not.
-	useStats: true,
+	useStats: false,
 	useStore: true,
 	useSteam: true,
 	useDiscord: true,
@@ -14,7 +14,6 @@ module.exports = {
 	// General
 	communityName: 'Community Name',
 	slogan: 'Your slogan here',
-	serversIntro: 'Describe your servers here.',
 	discordIntro: 'Describe your Discord here.',
 	communityIntro: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum, eveniet? Accusantium esse libero consectetur in a? Illum, sapiente quas aut facilis sit est saepe eligendi nostrum ad asperiores mollitia a! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum, eveniet? Accusantium esse libero consectetur in a? Illum, sapiente quas aut facilis sit est saepe eligendi nostrum ad asperiores mollitia a! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum, eveniet? Accusantium esse libero consectetur in a? Illum, sapiente quas aut facilis sit est saepe eligendi nostrum ad asperiores mollitia a!',
 
@@ -44,8 +43,8 @@ module.exports = {
 	// You can add as many as you want, but on most monitors max 3 cards will fit on one row.
 	cards: [
 		{
-			title: 'Card Title',
-			content: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum, eveniet? Accusantium esse libero consectetur in a? Illum, sapiente quas aut facilis sit est saepe eligendi nostrum ad asperiores mollitia a!'
+			title: 'EU Server',
+			content: 'IP: 123.12.123.22:28015'
 		},
 		{
 			title: 'Card Title 2',
